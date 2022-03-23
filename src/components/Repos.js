@@ -4,7 +4,7 @@ import { GithubContext } from "../context/context";
 import { ExampleChart, Pie3D, Column3D, Bar3D, Doughnut2D } from "./Charts";
 const Repos = () => {
   const { repos } = React.useContext(GithubContext);
-  console.log(repos);
+  // console.log(repos);
 
   const languages = repos.reduce((total, item) => {
     const { language, stargazers_count } = item;
